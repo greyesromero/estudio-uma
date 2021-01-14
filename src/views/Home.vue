@@ -243,12 +243,11 @@ export default {
 #sprite-intro {
     z-index: 903;
     display: block;
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     left: 0;
     opacity: 1;
-    width: 400px;
-    height: 400px;
+   text-align: center;
     color: black;
 }
 
@@ -276,12 +275,13 @@ export default {
 }
 
 #intro-blocker #intro-container {
-    position: absolute;
     z-index: 902;
-    top: 40%;
-    left: 40%;
-    width: 400px;
-    height: 400px;
+    position: absolute;
+left: 0;
+right: 0;
+top: 40%;
+margin: auto;
+text-align: center;
 }
 
 

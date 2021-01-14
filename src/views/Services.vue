@@ -4,14 +4,14 @@
 		<v-content class="mb-10">
 			<section>
 				<div class="py-6 d-none d-sm-flex"></div>
-				<v-container fluid class="text-center px-10 py-10">
+				<v-container fluid class="text-center" :class="[$vuetify.breakpoint.smAndDown ? ' px-2 py-2' : ' px-10 py-10']">
 					<span
 					:class="[$vuetify.breakpoint.smAndDown ? 'headline align-self-start' : 'display-1 align-self-start']"
 					class="secondary--text font-weight-bold py-5">
 						Servicios
 					</span>
 					<div class="py-8"></div>
-					<v-container fluid class="text-center px-10" style="max-width:1092px;max-height:500px;">
+					<v-container fluid class="text-center px-10" style="max-width:1092px;max-height:500px;overflow-y: auto!important;">
 						<v-layout row wrap :class="[$vuetify.breakpoint.smAndDown ? 'px-5' : '']">
 							<!-- LEFT SIDE -->
 							<v-flex xs12 md5>
@@ -38,7 +38,7 @@
 							</v-flex>
 							<!-- RIGHT SIDE -->
 							<v-flex xs12 md7>
-								<v-layout px-12>
+								<v-layout :class="[$vuetify.breakpoint.smAndDown ? 'px-2' : 'px-12']">
 								 <v-expansion-panels flat class="elevation-0" style="background-color:transparent!important;color:#fff!important;">
 									<v-expansion-panel
 									v-for="(item,i) in panels"
