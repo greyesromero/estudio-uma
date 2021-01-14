@@ -5,12 +5,14 @@
 			<section>
 				<div class="py-6 d-none d-sm-flex"></div>
 				<v-container fluid class="text-center px-10 py-10">
+					<div class="py-5"></div>
 					<span
+					style="font-family: 'AloneInSpace', Helvetica, Arial!important;"
 					:class="[$vuetify.breakpoint.smAndDown ? 'headline align-self-start' : 'display-1 align-self-start']"
 					class="secondary--text font-weight-bold py-5">
 						Portafolio
 					</span>
-					<v-container fluid class="text-center px-10" style="max-width:1092px;max-height:500px;overflow-y: scroll!important;">
+					<v-container fluid class="text-center px-10 my-8" :class="{'small-height': $vuetify.breakpoint. smAndDown, 'medium-height': $vuetify.breakpoint. mdAndUp}" style="max-width:1092px;overflow-y: scroll!important;">
 						<v-row>
 							<v-col cols="12" sm="6" md="4" v-for="n in projects" :key="n" >
 							
@@ -177,7 +179,13 @@ export default {
 	width:300px;
 }
 
+.small-height{
+	max-height:400px;
+}
 
+.medium-height{
+	max-height:500px;
+}
 
 .no-radius .v-image__image--cover{
 	background-size: unset!important;
@@ -186,6 +194,10 @@ export default {
     border-radius: 0px;
     border: none;
 	
+}
+
+.custom-font{
+	font-family: "AloneInSpace", Helvetica, Arial!important;
 }
 </style>
 

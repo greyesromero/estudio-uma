@@ -5,13 +5,15 @@
 			<section>
 				<div class="py-6 d-none d-sm-flex"></div>
 				<v-container fluid class="text-center" :class="[$vuetify.breakpoint.smAndDown ? ' px-2 py-2' : ' px-10 py-10']">
+					<div class="py-5"></div>
 					<span
+					style="font-family: 'AloneInSpace', Helvetica, Arial!important;"
 					:class="[$vuetify.breakpoint.smAndDown ? 'headline align-self-start' : 'display-1 align-self-start']"
 					class="secondary--text font-weight-bold py-5">
 						Servicios
 					</span>
-					<div class="py-8"></div>
-					<v-container fluid class="text-center px-10" style="max-width:1092px;max-height:500px;overflow-y: auto!important;">
+					
+					<v-container fluid class="text-center px-10 my-8" style="max-width:1092px;max-height:500px;overflow-y: auto!important;">
 						<v-layout row wrap :class="[$vuetify.breakpoint.smAndDown ? 'px-5' : '']">
 							<!-- LEFT SIDE -->
 							<v-flex xs12 md5>

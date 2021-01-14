@@ -61,5 +61,12 @@ export default {
         border-radius: 20;
       }
 
+	@font-face {
+		font-family: "AloneInSpace";
+		src: local("AloneInSpace"),
+		url(./fonts/AloneInSpace.ttf) format("truetype");
+	}
+
+	
 </style>
 

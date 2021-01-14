@@ -35,6 +35,7 @@ export default {
     },
     mounted() {
          document.getElementById('stars-container').classList.remove("super-index");
+
     },
 	created: function () {
 
@@ -213,6 +214,10 @@ export default {
     position: absolute;
     top: 0;
     width: 100VW !important;
+}
+
+.hide{
+	display:none!important;
 }
 
 /*****************************************************************

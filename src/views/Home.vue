@@ -7,7 +7,7 @@
                 <div class="preload hidden">
                     <div class="preload-bar" style="width: 0px;"></div>
                 </div>
-                <div id="intro-skewer" v-if="!getShowed"></div>
+                <div id="intro-skewer"></div>
                 <div id="intro-container">
                     <div id="sprite-intro">
                         <h1 ref="square" class="text-center ml6" style="color:#fff!important;"
@@ -182,6 +182,7 @@ export default {
 }
 
 .ml6 .letter {
+  font-family: "AloneInSpace", Helvetica, Arial;
   display: inline-block;
   line-height: 1em;
 }
